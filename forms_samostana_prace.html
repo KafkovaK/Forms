@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pøihláška na støední školu</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: "Times New Roman", Times, serif;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pøihláška ke vzdìlání - studiu</h1>
+    <h2>na støední škole</h2>
+    <hr />
+    <br />
+
+    <form>
+        <label for="pøíjmení">Pøíjmení uchazeèe</label>
+        <input type="text" name="pøíjmení" required /><br />
+        <br />
+
+        <label for="jméno">Jméno uchazeèe</label>
+        <input type="text" name="jméno" required /><br />
+        <br />
+
+        <label for="pohlaví">Pohlaví:</label>
+        <input type="radio" id="mu" name="pohlaví" value="Mu">
+        <label for="pohlaví">Mu</label>
+        <input type="radio" id="ena" name="pohlaví" value="ena">
+        <label for="pohlaví">ena</label><br />
+        <br />
+
+        <label for="narození">Místo narození (mìsto, stát)</label>
+        <input type="text" name="narození" placeholder="Zlín, Èeská Republika" required /><br />
+        <br />
+
+        <label for="data">Datum narození</label>
+        <input type="date" name="birth" required /><br />
+        <br />
+
+        <label for="cislo">Rodné èíslo</label>
+        <input type="text" name="cislo" pattern="[0-9]{6}[/][0-9]{4}" placeholder="123456/1234" required /><br />
+        <br />
+
+        <label for="adresa">Adresa trvalého pobytu</label>
+        <input type="text" name="adresa" required /><br />
+        <br />
+
+        <label for="kontakt1a2">Kontakt na zákonného zástupce</label><br />
+        <label for="kon1">Telefoní èíslo</label>
+        <input type="text" name="kontakt1" pattern="[0-9]{3}&#32;[0-9]{3}&#32;[0-9]{3}" required />
+        <label for="kon2">Email</label>
+        <input type="text" name="email" placeholder="example@email.cz" required /><br />
+        <br />
+
+        <label for="kontakt3a4">Kontakt na uchazeèe</label><br />
+        <label for="kon3">Telefoní èíslo</label>
+        <input type="text" name="kontakt1" pattern="[0-9]{3}&#32;[0-9]{3}&#32;[0-9]{3}" required />
+        <label for="kon4">Email</label>
+        <input type="text" name="email" placeholder="example@email.cz" required /><br />
+        <br />
+        <br />
+
+
+
+        <h3>Název a adresa støední školy</h3>
+        <h4>1. škola</h4>
+        <p>Název školy:</p>
+        <input type="text" name="1skola" required />
+        <p>Obor vzdìlání (kód a název):</p>
+        <input type="text" name="obor" pattern="[0-9]{2}[-][0-9]{2}[-][A-Z][/][0-9]{2}" placeholder="16-01-M/01" required /><br />
+        <br />
+
+        <h4>2. škola</h4>
+        <p>Název školy:</p>
+        <input type="text" name="2skola" required />
+        <p>Obor vzdìlání (kód a název):</p>
+        <input type="text" name="obor" pattern="[0-9]{2}[-][0-9]{2}[-][A-Z][/][0-9]{2}" placeholder="16-01-M/01" required /><br />
+        <br />
+        <br />
+        <br />
+
+
+
+        <label for="mìsto">V</label>
+        <input type="text" name="mìsto" placeholder="Zlínì" required />
+        <label for="den">dne</label>
+        <input type="date" name="den" required /><br />
+        <br />
+
+        <label for="podpis1">Podpis zákonného zástupce</label>
+        <input type="text" name="podpis1" required /><br />
+        <br />
+
+        <label for="podpis2">Podpis uchazeèe</label>
+        <input type="text" name="podpis2" required /><br />
+        <br />
+
+        <input type="checkbox" name="agree" value="Yes" required>
+        <label for="box">Zašktnìte pokud jste byli seznámeni s pravidli naší školy.</label><br />
+        <br />
+
+        <label for="range">Prosím ohodnote jak jste byli spokojení s tímto zpùsobem pøihlásky:</label><br />
+        <input type="range" name="feedback" nim="0" max="100" /><br />
+        <br />
+
+        <label for="poznámky">Prosím zašlete nám Vaše poznámky a dotazy:</label><br />
+        <textarea name="poznámky" rows="5" cols="50">...</textarea><br />
+        <br />
+
+        <input type="submit" value="Poslat" />
+        <input type="reset" value="Reset" /><br />
+        <br />
+
+
+    </form>
+</body>
+</html>
